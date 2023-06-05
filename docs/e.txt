@@ -1,0 +1,35 @@
+Test
+iggameurl=http://998877110.com/
+igaddr=http://h5.yfbsy.com/
+merchant=http://merchant.yfbsy.com/
+
+Prod
+iggameurl=https://share.tongitsq01.com/web-lobby/
+igaddr=https://h5.tongitsq01.com
+merchant=http://merchant.tongitsq01.com/
+
+接入
+公司名称: xxxx
+接入模式: 单一钱包/转账钱包
+回调地址: 如 https://www.xxx.com/ig/
+服务器IP: 如 xxx.xxx.xxx.xxx,xxx2.xxx2.xxx2.xxx2
+
+test1 single api:
+iggameurl: https://share.tongitsq01.com/web-lobby/
+igaddr: https://h5.tongitsq01.com
+OperatorToken: tongits
+SecretKey: wF6i8NpJRYZjxcrRdCtQzGAyycjDAtAz
+
+test2 transfer api:
+igaddr: https://h5.tongitsq01.com
+OperatorToken: TCd83m2bQ8MNX2iNhAXb8DFyz6CECCQJ
+SecretKey: AD4ekPmRFR46HAeZ8Zwp7yfnSYR4pJMD
+
+商户后台登录地址： http://merchant.yfbsy.com/
+账号：shubbet
+密码：a12345678
+
+
+
+FAQ: 我这里检查，并没有发现我方有异常返回情况，所有请求日志后台均有记录并且正常
+     建议接入方检查是否有异常日志

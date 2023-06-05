@@ -1,0 +1,6 @@
+set url:
+    https://www.google.com/recaptcha/admin/site/613773732/settings?hl=zh-cn
+client:
+    6LekcZUkAAAAADY_bTS2WBvOJljVg4vxo4VVIXDk
+server:
+    6LekcZUkAAAAAJxA9yltOdmnGhIums98NoUVvORw

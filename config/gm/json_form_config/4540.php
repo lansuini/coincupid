@@ -1,0 +1,72 @@
+<?php
+return [
+    ["name" => "rule", "field" => "rule", "valType" => "array", "val" => [
+        ["name" => "NewJettonSwitch", "field" => "NewJettonSwitch", "val" => null, "valType" => "integer", "re" => "Personal chip position switching switch, 1 chip setting json takes effect, 0 client setting chip takes effect"],
+        ["name" => "SpecialBetArea", "field" => "SpecialBetArea", "val" => "0", "valType" => "select", "re" => "Special betting area (points)", "options" => [
+            100 => 100,
+            500 => 500,
+            1000 => 1000,
+            2000 => 2000,
+            5000 => 5000,
+            10000 => 10000,
+            50000 => 50000,
+            100000 => 100000,
+            500000 => 500000,
+            1000000 => 1000000,
+        ]],
+        ["name" => "NormalBetArea", "field" => "NormalBetArea", "val" => "0", "valType" => "select", "re" => "Normal betting area (points)", "options" => [
+            100 => 100,
+            500 => 500,
+            1000 => 1000,
+            2000 => 2000,
+            5000 => 5000,
+            10000 => 10000,
+            50000 => 50000,
+            100000 => 100000,
+            500000 => 500000,
+            1000000 => 1000000,
+        ]],
+        ["name" => "tax", "field" => "tax", "val" => "0", "valType" => "integer", "re" => 'Deduction ratio, percentage per thousand'],
+        ["name" => "robot_big_rate", "field" => "robot_big_rate", "val" => "0", "valType" => "integer", "re" => "Probability of the robot betting big"],
+        ["name" => "robot_min_big_bet_gold_rate", "field" => "robot_min_big_bet_gold_rate", "val" => "0", "valType" => "integer", "re" => "The robot bets the minimum multiple"],
+        ["name" => "robot_max_big_bet_gold_rate", "field" => "robot_max_big_bet_gold_rate", "val" => "0", "valType" => "integer", "re" => "The robot bets the maximum multiple"],
+        ["name" => "robot_min_big_bet_gold", "field" => "robot_min_big_bet_gold", "val" => "0", "valType" => "integer", "re" => "The minimum basic gold coin for the robot to bet big (yuan)"],
+        ["name" => "robot_max_big_bet_gold", "field" => "robot_max_big_bet_gold", "val" => "0", "valType" => "integer", "re" => "The maximum basic gold coin for the robot to bet big (yuan)"],
+        ["name" => "robot_big_bet_max_area", "field" => "robot_big_bet_max_area", "val" => "0", "valType" => "integer", "re" => "The upper limit of the robot`s large betting area"],
+        ["name" => "chips_rate", "field" => "chips_rate", "val" => null, "valNum" => 10, "valType" => "arrayVal", "valSubType" => "integer", "re" => "Probability % of each betting chip"],
+        ["name" => "IsCankBanker", "field" => "IsCankBanker", "val" => "0", "valType" => "select", "re" => "Whether to open the bet", "options" => [
+            0 => "No",
+            1 => "Yes",
+        ]],
+        ["name" => "RobotBankerRate", "field" => "RobotBankerRate", "val" => "0", "valType" => "integer", "re" => "Probability of the robot winning the dealer %"],
+        ["name" => "copy_limit_bet", "field" => "copy_limit_bet", "val" => "0", "valType" => "integer", "re" => "Copy bet default amount (cents)"],
+        ["name" => "copy_s_end_times", "field" => "copy_s_end_times", "val" => "0", "valType" => "integer", "re" => "Small bet default end number of rounds 1"],
+        ["name" => "copy_m_end_times", "field" => "copy_m_end_times", "val" => "0", "valType" => "integer", "re" => "Medium bet default number of rounds 5"],
+        ["name" => "copy_b_end_times", "field" => "copy_b_end_times", "val" => "0", "valType" => "integer", "re" => "Big Bet Default Number of Hands Ended 10"],
+        
+        ["name" => "copy_robot_rate", "field" => "copy_robot_rate", "val" => "0", "valType" => "string", "re" => "The VIP seat is selected as the probability of copying the robot format 10,20,30,40,50,60"],
+        ["name" => "copy_robot_bet_rate", "field" => "copy_robot_bet_rate", "val" => "0", "valType" => "string", "re" => "The robot chooses 3 relative probabilities of betting Format 10,20,30"],
+        ["name" => "jetton", "field" => "jetton", "val" => null, "valNum" => 5, 'require' => 5, "options" => [
+            100 => 100,
+            500 => 500,
+            1000 => 1000,
+            2000 => 2000,
+            5000 => 5000,
+            10000 => 10000,
+            50000 => 50000,
+            100000 => 100000,
+            500000 => 500000,
+            1000000 => 1000000,
+        ], "valType" => "arrayVal", "valType2" => "select", "valSubType" => "integer", "re" => "User personal chip settings (points)"],
+        ["name" => "robot_bet_special_max", "field" => "robot_bet_special_max", "val" => "0", "valType" => "integer", "re" => "Robot maximum bet in special area (points)"],
+    ]],
+
+    ["name" => "VipBetInfo", "field" => "VipBetInfo", "valType" => "arrayMuti", "val" => [
+        [
+            ["name" => "rate", "field" => "rate", "val" => null, "valType" => "integer", "re" => "Probability%"],
+            ["name" => "index", "field" => "index", "val" => null, "valType" => "integer", "re" => "seat number"],
+            ["name" => "minnum", "field" => "minnum", "val" => null, "valType" => "integer", "re" => "Minimum chips (points)"],
+            ["name" => "maxnum", "field" => "maxnum", "val" => null, "valType" => "integer", "re" => "Maximum chips (points)"],
+        ]
+    ], 're' => "VIP Seat Robot Betting Information"],
+];

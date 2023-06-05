@@ -1,0 +1,17 @@
+token: 5858687505:AAHmua2-T4v33Ay98MYKiSQk2qNitBpiFhk
+
+@IG_GO_BOT
+IG PP Robot
+
+BOT
+https://api.telegram.org/bot<YourBOTToken>/getUpdates
+https://api.telegram.org/bot5858687505:AAHmua2-T4v33Ay98MYKiSQk2qNitBpiFhk/getUpdates
+
+send message:
+/start
+
+
+chat id: -650654893
+
+
+pip3 install python-telegram-bot

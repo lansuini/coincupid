@@ -1,0 +1,32 @@
+[program:fail-task-notify]
+process_name=%(program_name)s_%(process_num)02d
+command=php /data/hofa/pd/artisan queue:work redis --sleep=1 --tries=0 --queue=failtask
+autostart=true
+autorestart=true
+user=www
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/data/hofa/pd/storage/supervisord-fail-task-notify-worker.log
+stopwaitsecs=3600
+
+[program:fail-task-batch-notify]
+process_name=%(program_name)s_%(process_num)02d
+command=php /data/hofa/pd/artisan queue:work redis --sleep=1 --tries=0 --queue=batchnotifytask
+autostart=true
+autorestart=true
+user=www
+numprocs=10
+redirect_stderr=true
+stdout_logfile=/data/hofa/pd/storage/supervisord-fail-task-notify-batch-worker.log
+stopwaitsecs=3600
+
+[program:default]
+process_name=%(program_name)s_%(process_num)02d
+command=php /data/hofa/pd/artisan queue:work redis --sleep=1 --tries=0 --queue=default
+autostart=true
+autorestart=true
+user=www
+numprocs=1
+redirect_stderr=true
+stdout_logfile=/data/hofa/pd/storage/supervisord-default-worker.log
+stopwaitsecs=3600

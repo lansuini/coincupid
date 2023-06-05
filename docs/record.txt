@@ -1,0 +1,17 @@
+
+sudo chmod -R 777 storage
+
+
+前端
+aic3ruchech6ua5.com
+www.aic3ruchech6ua5.com
+
+后端
+imapi.aic3ruchech6ua5.com
+imgm.aic3ruchech6ua5.com
+imanalysis.aic3ruchech6ua5.com
+imserver.aic3ruchech6ua5.com
+
+
+php artisan queue:monitor redis:imcallback
+php artisan queue:monitor redis:imcallback --max=100
